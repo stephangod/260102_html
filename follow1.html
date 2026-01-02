@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>iframe test</h1>
+        <ul>
+            <li><a href="sample1.html" target="myframe">honme</a></li>
+            <li><a href="sample2.html" target="myframe">profile</a></li>
+            <li><a href="sample3.html" target="myframe">gallery</a></li>
+            <li><a href="sample4.html" target="myframe">lecture</a></li>
+        </ul>
+    </div>
+    <iframe src="./images/img01.jpg" 
+        id="myIframe"
+        name="myframe"
+        width = "350" 
+        height = "500"
+        scrolling = "no"
+        frameborder="0"
+        ></iframe>
+    <script>
+            const iframe = document.getElementById("myIframe")
+
+            iframe.onload = function(){
+                const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                iframe.style.heigjt =iframeDoc.body.srollHeight + 30 + "px";
+            }
+    </script>
+
+</body>
+</html>
