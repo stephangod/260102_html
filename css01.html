@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form[name = "myForm" ] > fieldset {
+            width : 400px ;
+
+        }
+        form[name = "myForm"] input{
+            width: 385ox;
+        }
+        input[type ="text"]{
+            background-color:skyblue;
+            padding : 10px 20px;
+            margin : 30px 0;
+            box-sizing: border-box;
+
+        }
+        input[type = "text"]:nth-child(2){
+            border:1px solid red;
+        }
+    
+        input[type = "text"]:nth-child(3){
+            background-color: green;
+        }
+        input[name= input3]{
+            width: 200px;
+            transition: width 0.4s cubic-bezier(.17,.67,.83,.67);
+        }
+        input[name=input4]    
+        input[name=input3]:focus{
+            
+        }
+
+    </style> 
+
+
+</head>
+
+<body>
+    <h1>폼 스타일 꾸미기</h1>
+    <form action="">
+        <label for="">input css1</label><br/>
+        <input type="text" name="input1"><br/>
+        <label for="">input css2</label><br/>
+        <input type="text" name="input2"><br/>
+        <label for="">input css3</label><br/>
+        <input type="text" name="input3"><br/>
+        <label for="">input css4</label><br/>
+        <input type="text" name="input4"><br/>
+    </form>
+</body>
+</html>
