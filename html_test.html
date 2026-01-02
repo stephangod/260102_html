@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.sub-page{
+            position: relative;
+            border: 1px solid red;
+            height: 100vh;
+            top: 160px;
+        }
+        div#top{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            border: 1px solid green;
+            z-index:1;
+        }
+    </style>
+</head>
+<body>
+    <div id="top"></div>>
+        <h1>안녕하세요</h1>
+        <ul>
+            <li>
+                <a href="#home">home</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+    <div class="sub-page" id="home">home page <a href="#top">Top</a></div>
+</body>
+</html>
